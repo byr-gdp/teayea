@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>teayea</title>
+	<!-- 引入css -->
+	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.css" />
+	<!-- fullpage.js依赖于jquery库 -->
+	<script type="text/javascript" src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/fullPage.js/2.6.5/jquery.fullPage.min.js"></script>
+	<style>
+	body{ background-color: #DCDCDC;}
+	h1{ padding-left: 50px;}
+	a{ text-decoration: none;}
+	#menu { margin: 0; padding: 0; position: fixed; left: 10px; top: 10px; list-style-type: none; z-index: -10;}
+	#menu li { float: left; margin:  0 10px 0 0; font-size: 14px;}
+	#menu a { float: left; padding: 10px 20px; background-color: #DCDCDC; color: #333; text-decoration: none;}
+	#menu .active a { color: #fff; background-color: #333;}
+	</style>
+</head>
+<body>
+	<div id="main">
+		<div class="section" style="text-align: center;">
+			<h1>目前选择了几个页面来练手，等到前端大牛写好了再通过学习源码找出差距</h1>
+			<h1>还望多多指教 :)</h1>
+		</div>
+		<div class="section">
+			<h1>登陆注册1</h1>
+			<h1>设计图如右所示，重构图<a href="登陆注册1.html">点击我</a></h1>
+			<img src="./image/登录注册1.png" alt="" style="width:800px; height: 464px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -232px;">
+			<!-- <h1>重构图</h1><a href="">链接</a> -->
+		</div>
+		<div class="section">
+			<h1>登陆注册2</h1>
+			<h1>设计图如右所示，重构图<a href="登陆注册2.html">点击我</a></h1>
+			<img src="./image/登录注册2.png" alt="" style="width:800px; height: 464px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -232px;">
+		</div>
+		<div class="section">
+			<h1>登陆注册3</h1>
+			<h1>设计图如右所示，重构图<a href="登陆注册3.html">点击我</a></h1>
+			<img src="./image/登录注册3.png" alt="" style="width:800px; height: 464px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -232px;">
+		</div>
+		<div class="section">
+			<h1>3-1</h1>
+			<h1>设计图如右所示，重构图<a href="3-1-下拉菜单用li代替.html">点击我</a></h1>
+			<img src="./image/3-1.png" alt="" style="width:800px; height: 464px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -232px;">
+		</div>
+			<div class="section">
+			<h1>3-2</h1>
+			<h1>设计图如右所示，重构图<a href="3-2.html">点击我</a></h1>
+			<img src="./image/3-2.png" alt="" style="width:800px; height: 464px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -232px;">
+		</div>
+			<div class="section">
+			<h1>3-3</h1>
+			<h1>设计图如右所示，重构图<a href="3-3.html">点击我</a></h1>
+			<img src="./image/3-3.png" alt="" style="width:800px; height: 464px; position: absolute; left: 50%; margin-left: -200px; top: 50%; margin-top: -232px;">
+		</div>
+	</div>
+	<ul id="menu">
+		<li data-menuanchor="page0" class="active"><a href="#page0">起始页</a></li>
+	    <li data-menuanchor="page1"><a href="#page1">登陆注册1</a></li>
+	    <li data-menuanchor="page2"><a href="#page2">登陆注册2</a></li>
+	    <li data-menuanchor="page3"><a href="#page3">登陆注册3</a></li>
+	    <li data-menuanchor="page4"><a href="#page4">3-1</a></li>
+	    <li data-menuanchor="page5"><a href="#page5">3-2</a></li>
+	    <li data-menuanchor="page6"><a href="#page6">3-3</a></li>
+	</ul>
+	<script type="text/javascript">
+    $(function() {
+        $("#main").fullpage({
+        	 // continuousVertical: true,
+    	     anchors: ['page0', 'page1', 'page2', 'page3', 'page4','page5','page6'],
+             menu: '#menu'
+        });
+    });
+</script>
+</body>
+</html>
