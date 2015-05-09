@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>3-3</title>
+	<link rel="stylesheet" href="./css/3-3.css">
+	<script src="./js/3-3.js"></script>
+</head>
+<body onload="prepare()">
+	<div id="main">
+		<span class="title">选择制茶工具</span>
+			<div style="width:100%;">
+			<div style="display: inline-block; width:47%; ">
+				<div style="position:relative;">
+					<span class="menu" onclick="clickEvent(1);">选择工艺</span>
+					 <img src="./image/down.png" class="down">
+				</div> 
+				<ul id="u1" class="hidden" >
+					<li class="choice1" onclick='selectLi("工艺1", 1)'>工艺1</li>
+					<li class="choice1" onclick='selectLi("工艺2", 1)'>工艺2</li>
+					<li class="choice1" onclick='selectLi("工艺3", 1)'>工艺3</li>
+					<li class="choice1" onclick='selectLi("工艺4", 1)'>工艺4</li>
+					<li class="choice1" onclick='selectLi("工艺5", 1)'>工艺5</li>
+					<li class="choice1" onclick='selectLi("工艺6", 1)'>工艺6</li>
+				</ul>
+			</div>
+			<div style="display: inline-block; width:47%;">
+				<div style="position: relative">
+					<span class="menu" onclick="clickEvent(2);">制茶师</span>
+					 <img src="./image/down.png" class="down">
+				</div>
+				<ul id="u2" class="hidden">
+					<li class="choice2" onclick='selectLi("制茶师1", 2)'>制茶师1</li>
+					<li class="choice2" onclick='selectLi("制茶师2", 2)'>制茶师2</li>
+					<li class="choice2" onclick='selectLi("制茶师3", 2)'>制茶师3</li>
+					<li class="choice2" onclick='selectLi("制茶师4", 2)'>制茶师4</li>	
+					<li class="choice2" onclick='selectLi("制茶师5", 2)'>制茶师5</li>	
+					<li class="choice2" onclick='selectLi("制茶师6", 2)'>制茶师6</li>
+				</ul>
+			</div>
+		</div>
+		<div id="choose">
+			<button class="cancel"></button>
+			<button class="confirm"></button>
+		</div>
+	</div>
+</body>
+</html>
